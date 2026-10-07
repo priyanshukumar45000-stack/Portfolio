@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Priyanshu Kumar – Software Engineer | Full-Stack Developer</title>
+<meta name="description" content="Freelance MERN stack and AI developer. I build web apps, dashboards and AI tools for small businesses and startups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--surface:#ffffff;--ink:#14213d;--muted:#55607a;--line:#d9deea;--accent:#2f5bea;--accent-ink:#ffffff;--signal:#f5a300;
+--display:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;--body:'IBM Plex Sans','Segoe UI',Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--surface:#161e33;--ink:#eaeefb;--muted:#a1abc7;--line:#27314d;--accent:#6f93ff;--accent-ink:#0e1424;--signal:#ffc233}}
+:root[data-theme="dark"]{--bg:#0e1424;--surface:#161e33;--ink:#eaeefb;--muted:#a1abc7;--line:#27314d;--accent:#6f93ff;--accent-ink:#0e1424;--signal:#ffc233}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:700 20px var(--display);text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 72px;display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+.status{display:inline-flex;gap:10px;align-items:center;font-size:15px;color:var(--muted);margin:0 0 20px}
+.dot{width:10px;height:10px;border-radius:50%;background:#22a867;box-shadow:0 0 0 0 rgba(34,168,103,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(34,168,103,0)}100%{box-shadow:0 0 0 0 rgba(34,168,103,0)}}
+h1{font:800 clamp(38px,6vw,64px)/1.04 var(--display);letter-spacing:-.02em;margin:0 0 22px}
+.lead{font-size:19px;color:var(--muted);max-width:34em;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{transform:translateY(-1px)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px}
+.panel h2{font:700 20px var(--display);margin:0 0 4px}
+.panel p{margin:0 0 16px;color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{font:500 14px var(--body);padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.panel .btn{width:100%;text-align:center}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2.title{font:700 clamp(28px,4vw,38px)/1.15 var(--display);letter-spacing:-.01em;margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 36px;max-width:38em}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font:700 19px var(--display);margin:0 0 8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.proj.feature{grid-column:1/-1;border-left:6px solid var(--signal);padding:30px}
+.proj h3{font:700 22px var(--display);margin:0}
+.proj p{margin:0;color:var(--muted)}
+.tag{display:inline-block;font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.badge{align-self:flex-start;font-size:13px;font-weight:600;color:#14213d;background:var(--signal);padding:3px 10px;border-radius:6px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.skills .card h3{font-size:17px}
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 28px 8px}
+.timeline li::before{content:"";position:absolute;left:-31px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.timeline b{font:700 18px var(--display);display:block}
+.timeline span{color:var(--muted);font-size:15px;display:block}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;padding-top:14px;border-top:3px solid var(--accent)}
+.steps li::before{content:"Step " counter(s);display:block;font-size:14px;color:var(--muted);margin-bottom:4px}
+.steps b{font:700 18px var(--display);display:block;margin-bottom:4px}
+.steps p{margin:0;color:var(--muted);font-size:15.5px}
+.contact{text-align:left}
+.contact .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+footer{padding:28px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:24px}.grid3,.projects,.skills,.steps{grid-template-columns:1fr}nav a{margin-left:14px}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="nav"><a class="logo" href="#top">Priyanshu Kumar</a>
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></header>
+
+<main id="top">
+<div class="hero">
+<div>
+<p class="status"><span class="dot"></span>Available for freelance projects</p>
+<h1>Priyanshu Kumar</h1>
+<p class="lead"><strong>Software Engineer | Full-Stack Developer</strong><br>Building scalable web applications and data-driven solutions.</p>
+<div class="btns"><a class="btn primary" href="#work">View projects</a><a class="btn ghost" href="#contact">Contact me</a></div>
+</div>
+<div class="panel" aria-labelledby="q">
+<h2 id="q">What do you need built?</h2>
+<p>Pick one and send me a message. I reply within a day.</p>
+<div class="chips" id="chips">
+<button class="chip" aria-pressed="true">Website</button>
+<button class="chip" aria-pressed="false">Web app</button>
+<button class="chip" aria-pressed="false">AI tool</button>
+<button class="chip" aria-pressed="false">Dashboard</button>
+<button class="chip" aria-pressed="false">Something else</button>
+</div>
+<a class="btn primary" id="quote" href="mailto:priyanshukumar45000@gmail.com?subject=Project%20enquiry%3A%20Website">Email me about a website</a>
+</div>
+</div>
+
+<section id="about"><h2 class="title">About me</h2>
+<p class="sub">I'm a Certified MERN Stack Developer with a strong full-stack foundation. I build scalable web applications and AI-driven tools, and I'm now deepening my software engineering skills with an MCA. Clients get clear communication, mobile-friendly work and software that is ready to use.</p></section><section id="skills">
+<h2 class="title">Technical skills</h2>
+<p class="sub">The tools I use to build and ship client work.</p>
+<div class="skills">
+<div class="card"><h3>Front end</h3><div class="tags"><span class="tag">React.js</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div></div>
+<div class="card"><h3>Back end</h3><div class="tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">SQL</span><span class="tag">REST APIs</span></div></div>
+<div class="card"><h3>AI and data</h3><div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Streamlit</span><span class="tag">AI &amp; automation tools</span></div></div>
+<div class="card"><h3>Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Java</span><span class="tag">C++</span></div></div>
+</div>
+</section><section id="work">
+<h2 class="title">Featured projects</h2>
+<p class="sub">Full-stack products, data dashboards and AI tools I have built.</p>
+<div class="projects">
+<article class="proj feature">
+<span class="badge">Newest · Full stack</span>
+<h3>AI Trip Planner (Full-Stack)</h3>
+<p>A complete web application where travellers enter their budget, dates and interests and get a personalised day-by-day itinerary. It extends my Python prototype into a real product with a React front end and a Node.js and Express.js back end connected to AI models.</p>
+<div class="tags"><span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">AI models</span><span class="tag">REST API</span></div>
+</article>
+<article class="proj"><h3>Doctor Appointment Website</h3><p>A responsive full-stack website where patients can find doctors and book appointments online, on any phone, tablet or desktop.</p><div class="tags"><span class="tag">Full-stack</span><span class="tag">Responsive</span></div></article>
+<article class="proj"><h3>Weather Dashboard</h3><p>Live global weather analytics fetched through RESTful API calls. Shows humidity, pressure and wind speed from parsed JSON data.</p><div class="tags"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">OpenWeather API</span></div></article>
+<article class="proj"><h3>AI Voice Assistant</h3><p>Understands spoken commands and carries out tasks hands-free, using speech recognition and natural language processing.</p><div class="tags"><span class="tag">Python</span><span class="tag">Speech recognition</span><span class="tag">NLP</span></div></article>
+<article class="proj"><h3>AI Trip Planner (Prototype)</h3><p>The first Python version that generates itineraries and recommends destinations and activities from user preferences.</p><div class="tags"><span class="tag">Python</span><span class="tag">AI</span></div></article>
+<article class="proj"><h3>Netflix Homepage Clone</h3><p>A pixel-careful, mobile-responsive replica built with CSS Flexbox and Grid, with interactive parts powered by DOM scripting.</p><div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span></div></article>
+</div>
+</section><section id="experience"><h2 class="title">Experience</h2><ol class="timeline">
+<li><b>AI Intern, Excellence Technology</b><span>Mohali, Punjab · June – July 2025</span></li></ol></section><section id="education"><h2 class="title">Education</h2><ol class="timeline">
+<li><b>MCA (Master of Computer Applications)</b><span>I.K. Gujral Punjab Technical University · 2026 – Present</span></li>
+<li><b>BCA (Bachelor in Computer Applications)</b><span>I.K. Gujral Punjab Technical University · 07/2023 – June 2026, completed</span></li>
+<li><b>Senior Secondary (Class 12)</b><span>Netaji Subhash Public School · 2021 – 2023</span></li>
+<li><b>Secondary (Class 10)</b><span>South Point School · 2021</span></li></ol></section><section id="achievements"><h2 class="title">Achievements and certifications</h2><ol class="timeline">
+<li><b>Certified MERN Stack Developer</b><span>Infosys Springboard · 72-hour intensive program</span></li>
+<li><b>GDSC Dev Fest participant</b><span>2023 and 2024</span></li>
+<li><b>Cricket competitor</b><span>Played in competitions. Outside code I enjoy video games, technical trivia and video editing.</span></li></ol></section><section id="contact" class="contact">
+<h2 class="title">Let's talk about your project</h2>
+<p class="sub">Tell me what you want to build. I'll reply with questions, a rough timeline and a quote.</p>
+<div class="links">
+<a class="btn primary" href="mailto:priyanshukumar45000@gmail.com">priyanshukumar45000@gmail.com</a>
+<a class="btn ghost" href="https://github.com/priyanshukumar45000-stack" target="_blank" rel="noopener">GitHub</a>
+<a class="btn ghost" href="https://wa.me/917033548627">Message on WhatsApp</a>
+<a class="btn ghost" href="tel:+917033548627">Call +91 70335 48627</a>
+</div>
+</section>
+</main>
+<footer>© 2026 Priyanshu Kumar · Jamshedpur, Jharkhand, India · <a href="https://github.com/priyanshukumar45000-stack" target="_blank" rel="noopener">GitHub</a></footer>
+</div>
+<script>
+(function(){
+var chips=document.querySelectorAll('#chips .chip'),q=document.getElementById('quote');
+chips.forEach(function(c){c.addEventListener('click',function(){
+chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+c.setAttribute('aria-pressed','true');
+var t=c.textContent.trim();
+q.href='mailto:priyanshukumar45000@gmail.com?subject='+encodeURIComponent('Project enquiry: '+t);
+q.textContent=t==='Something else'?'Email me your idea':'Email me about '+(/^[AEIOU]/.test(t)?'an ':'a ')+t.toLowerCase();
+});});
+})();
+</script>
+</body>
+</html>
